@@ -18,7 +18,7 @@
 
   <p align="center">
     <br />
-    <a href="https://alokverma-uiproject-09.netlify.app/">View Demo</a>
+    <a href="https://alokverma-uiproject-09.netlify.app/">Live Link</a>
   </p>
 </div>
 
