@@ -81,14 +81,16 @@ This project is presently deployed in **Netlify Service**
 - ✔ CSS 3
   - ✔ CSS Selectors
   - ✔ CSS Positioning
+  - ✔ flexbox
   - ✔ Background property 
   - ✔ Gradient
   - ✔ Box-shadow
+ - ✔ Git and Github
 <!-- NOTE -->
 
 ## Note
 
-For this project I took around `5 to 6 hours` to complete it. The major portion of my time spent in working on CSS Positions.
+For this project I took around `7 to 8 hours` to complete it. The major portion of my time spent in working on CSS Positions.
 
 <p align="right">(<a href="#top"> back to top </a>)</p>
 
