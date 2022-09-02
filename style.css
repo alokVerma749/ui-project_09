@@ -16,7 +16,9 @@ header {
   height: 500px;
   background-color: #3400ff;
 }
-
+.hamburger{
+  display:none;
+}
 nav {
   float: right;
   margin-right: 40px;
@@ -183,6 +185,7 @@ nav {
 }
 
 .faq-image {
+  overflow: hidden;
   width: 40%;
   height: 300px;
   float: right;
@@ -273,24 +276,19 @@ button {
 }
 
 .footer-section {
-  height: 225px;
   background-color: #3c0afe;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
-
 .footer-left {
-  float: left;
+  padding: 10px;
 }
-
-.footer-logo {
-  margin-top: 50px;
-  margin-bottom: 25px;
-  padding-left: 90px;
-}
-
 .list {
   display: flex;
   flex-direction: row;
-  margin-left: 30px;
   list-style-type: none;
   color: white;
 }
@@ -298,24 +296,124 @@ button {
 .logos-list {
   display: flex;
   flex-direction: row;
-  margin-left: 10px;
   list-style-type: none;
   color: white;
-  margin-top: 120px;
-  margin-right: -200px;
 }
 
 .list-items {
   margin-left: 25px;
 }
 
-.footer-right {
-  float: right;
-  margin-top: 10px;
-  margin-right: 100px;
-}
-
 .footer-logos {
   margin-top: 50px;
   margin-left: 20px;
+}
+
+@media screen and (max-width:850px){
+  nav{
+    display: none;
+  }
+ header .header-image {
+    width: 80%;
+    margin: 0 auto;
+}
+header .logo{
+  margin: 0;
+}
+header .res{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+ .companies {
+  display: none;
+}
+  .hamburger{
+    display: block;
+  }
+  .api-heading{
+    text-align: center;
+  }
+  .api .cards {
+    margin-left: 0;
+    margin-bottom: 10px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .card, .card-active{
+    width: 80%;
+    margin: 0 auto;
+    }
+    .blog-heading{
+      text-align: center;
+      margin: 0 auto;
+      margin-left: 0;
+    }
+    .blog-cards{
+      margin-left: 0;
+      flex-direction: column;
+      width: 100%;
+    }
+    .blog-card{
+      flex-direction: column;
+      margin-bottom: 10px;
+      width: 80%;
+      margin: 10px auto;
+    }
+    .blog-card .blog-bottom{
+      display: none;
+    }
+    .faq-section{
+      display: flex;
+      height: fit-content;
+      padding: 10px;
+      flex-direction: column;      
+      text-align: center;
+      margin: 10px auto;
+      width: 90vw;
+    }
+    .faq-section .faq-content{
+      margin-left: 0;
+    }
+    .faq-image{
+      display: none;
+    }
+    .download-section{
+      height: fit-content;
+      padding: 10px;
+      flex-direction: column;      
+      text-align: center;
+    }
+    .download-email {
+      width: fit-content;
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 60px;
+      padding: 0;
+      margin: 100px auto 0 auto;
+  }
+  .download-email input {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+  .download-emial button {
+    width: 150px;
+    padding: 10px;
+  }
+  .footer-section{
+    height: fit-content;
+    padding: 5px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-section .footer-left .footer-logo img{
+    width: 15px;
+  }
+  .footer-section .footer-left .list{
+    flex-direction: column;
+  }
 }
